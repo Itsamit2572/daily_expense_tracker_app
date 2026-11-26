@@ -99,7 +99,7 @@ extension DateExtension on DateTime {
 
 extension DoubleFormatting on double {
   String toCurrencyWithSymbol() {
-    final formatter = NumberFormat.currency(symbol: '\$ ', decimalDigits: 2);
+    final formatter = NumberFormat.currency(symbol: '₹ ', decimalDigits: 2);
     return formatter.format(this);
   }
 
